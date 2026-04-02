@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WORK TRACKER</title>
+
+<link rel="stylesheet" href="work_monitor.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>
+    <span class="title-text">WORK MONITOR</span> ✍️
+  </h2>
+
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <input type="datetime-local" id="dateInput">
+
+  <select id="priorityInput">
+    <option value="High">High Priority</option>
+    <option value="Medium">Medium Priority</option>
+    <option value="Low">Low Priority</option>
+  </select>
+
+  <button onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="work_monitor.js"></script>
+
+</body>
+</html>
